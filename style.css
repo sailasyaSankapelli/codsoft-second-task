@@ -1,0 +1,249 @@
+*{
+    margin:0px;
+    --color:#e3da38;
+    --color2:#16357c;
+    --color3:#809be6;
+    --color4:#EEE4E1;
+    --font:'Noto Serif Display', serif;
+    text-decoration: none;
+}
+.nav{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color:#f1eae8;
+    height: 90px;
+}
+.nav ul li{
+    list-style: none;
+   /* padding:10px;*/
+}
+.nav li a{
+    color:var(--color2);
+    padding:10px;
+    font-weight:900;
+    font-size:20px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.nav li a:hover{
+    background-color: var(--color2);
+    color:var(--color4);
+    padding:10px;
+    border-radius: 10px;
+
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+}
+.nav img{
+    width:60px;
+    height:60px;
+}
+.home{
+    height: 650px;
+    background-color:var(--color2); /*linear-gradient(to left, #cbac85,var(--color) ,#965015,#6a3005,#3e1e04);*/
+    display:grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: 50% 50%;
+}
+.img{
+grid-area:1/1/3/2;
+width:100%;
+height:90%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 4vh;
+}
+
+.home h1{
+    grid-area:1/2/2/3;
+    display:flex;
+    margin-left:100px;
+    align-items:end;
+    font-size:55px;
+    font-family:var(--font);
+    color:	var(--color);
+}
+h1,.img2{
+    display:flex;
+    gap:10px;
+}
+.home .img2{
+    width:50px;
+    height:60px;   
+}
+
+.home p{
+    grid-area:2/2/3/3;
+    color:var(--color);
+    margin-left:105px;
+    font-size: 28px;
+    font-family:'Didact Gothic', sans-serif;
+}
+
+.info{
+    background-color:var(--color3);
+    display: flex;
+    flex-direction: column;
+    gap:90px;
+    font-family:'Didact Gothic', sans-serif;
+}
+
+.info>h2{
+    font-size: 40px;
+    color:var(--color2);
+    margin-top: 70px;
+    margin-left:50px;
+}
+
+.inner1{
+    display: flex;
+}
+.info1,.info2,.info3{
+    width: 220px;
+    margin-left:50px;
+    padding:10px;
+    margin-top: -30px;
+}
+
+.info1 h2,.info2 h2,.info3 h2{
+    color:var(--color2);
+    font-size: 30px;
+    font-weight:bolder;
+}
+.inner2{
+    display: flex;
+}
+.info .img3{
+    margin-top:-40px;
+    width:200px;
+    height: 210px;
+}
+
+.info p{
+    color:var(--color4);
+}
+.info img{
+    width:160px;
+    height: 160px;
+    margin-top: -40px;
+}
+
+.inner2{
+    background-color: var(--color3);
+}
+
+.stuff{
+    height:500px;
+    background-color: var(--color2);
+    font-family:'Didact Gothic', sans-serif;
+}
+
+.stuff-inside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stuff-1,.stuff-3{
+    background-color: #cebab7;
+    width:300px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:30px;
+}
+
+.stuff-2{
+    background-color: var(--color);
+    width:300px;
+    height:300px;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stuff img{
+    height:160px;
+    width: 160px;
+    border-radius: 10px;
+    margin-top:20px;
+    background-color: var(--color2);
+}
+
+.stuff h2{
+    color: var(--color3);
+    font-size: 40px;
+    padding-top: 70px;
+    margin-left:50px;
+}
+
+.stuff-1 button,.stuff-3 button{
+    padding:10px;
+    border:0px;
+    background-color: var(--color2);
+    font:var(--font);
+    color:rgb(158, 83, 158);
+}
+
+
+.final{
+    height: 600px;
+    background-color: var(--color3);
+    font-family: 'Didact Gothic', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+
+.final h2{
+    font-size: 50px;
+    color:var(--color2);
+}
+.final img{
+width: 480px;
+height: 460px;
+margin-left:150px;
+margin-top:70px;
+grid-area:1/1/2/2;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.final-inner{
+    grid-area:1/2/2/3;
+    margin-top:-50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: center;
+    padding:10px;
+    font-size: 25px;
+    font-family:'Didact Gothic', sans-serif;
+    color:var(--color);
+    font-weight: bold; 
+}
+
+.final-inner i{
+    color:var(--color2);
+    padding:10px;
+}
+
+.final-inner i:hover{
+    color:var(--color);
+}
+
+.final-inner a{
+    color: var(--color);
+    text-decoration: underline;
+}
